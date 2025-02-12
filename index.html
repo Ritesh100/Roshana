@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshana Parajuli - Medical Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #2A5C82;
+            --accent-color: #37A6CB;
+            --light-bg: #F8F9FA;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .hero-section {
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: rgb(3, 26, 102);
+}
+
+        .section-title {
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: var(--accent-color);
+        }
+        @media (max-width: 768px) {
+    .hero-section {
+        height: auto; /* Let the height adjust based on content */
+        min-height: 200px; /* Adjust for smaller screens */
+    }
+}
+
+        .skill-badge {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .project-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact-section {
+            background: var(--light-bg);
+        }
+
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <nav id="navbar-example" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#" style="color: var(--primary-color);">Roshana Parajuli</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blogs">Blogs And Articals</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-4">Roshana Parajuli </h1>
+            <h2 class="lead mb-4">Dedicated Medical Student | Researcher | </h2>
+            <a href="#contact" class="btn btn-lg btn-light px-5 py-3">Explore My Articals and Blogs</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <h2 class="section-title text-center">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4">
+                    <img src="profile.jpeg" alt="Profile" class="profile-img rounded-circle">
+                </div>
+                <div class="col-lg-8">
+                    <p class="lead">Passionate about healing and learning, I'm an MBBS student at Universal College of Medical Science (UCMS) Nepal, shaping my journey towards saving lives!</p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="blogs" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="section-title text-center">Blogs & Articles</h2>
+            <div class="row">
+                <!-- Blog 1 -->
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="blog1.jpg" class="card-img-top" alt="Cancer Research">
+                        <div class="card-body">
+                            <h5 class="card-title">Cancer Research Study</h5>
+                            <p class="card-text text-truncate" style="max-height: 4.5em; overflow: hidden;">
+                                This study explores the latest advancements in cancer treatment, focusing on immunotherapy and genetic engineering to combat various types of cancer. The research highlights the role of precision medicine in targeting tumor cells while minimizing side effects for patients. 
+                            </p>
+                            <a href="blog-detail.html?id=1" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Blog 2 -->
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="blog2.jpg" class="card-img-top" alt="Mental Health Awareness">
+                        <div class="card-body">
+                            <h5 class="card-title">Mental Health Awareness</h5>
+                            <p class="card-text text-truncate" style="max-height: 4.5em; overflow: hidden;">
+                                Mental health plays a crucial role in overall well-being. This article discusses the importance of early intervention, effective coping mechanisms, and strategies to improve mental resilience. Recent studies show a significant link between lifestyle changes and mental health improvement.
+                            </p>
+                            <a href="blog-detail.html?id=2" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Blog 3 -->
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="blog3.jpg" class="card-img-top" alt="Latest in Neuroscience">
+                        <div class="card-body">
+                            <h5 class="card-title">Latest in Neuroscience</h5>
+                            <p class="card-text text-truncate" style="max-height: 4.5em; overflow: hidden;">
+                                The brain is a fascinating organ, and recent breakthroughs in neuroscience are uncovering new insights into how we think, feel, and process emotions. This blog dives deep into the latest research on brain connectivity and its implications for medicine.
+                            </p>
+                            <a href="blog-detail.html?id=3" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <section id="contact" class="contact-section py-5">
+        <div class="container py-5">
+            <h2 class="section-title text-center">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary px-5 py-3">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+         
+            <p class="mb-0">&copy; All rights reserved.
+            Designed and Developed by <a href="https://reteshthapa.com.np/"> Ritesh Thapa</a></p>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scroll and active nav link
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').style.backgroundColor = 'rgba(255,255,255,0.95)';
+            } else {
+                document.querySelector('.navbar').style.backgroundColor = 'rgba(255,255,255,0.95)';
+            }
+        });
+
+        // Initialize carousel
+        const myCarousel = new bootstrap.Carousel(document.getElementById('projectCarousel'), {
+            interval: 5000,
+            wrap: true
+        });
+    </script>
+</body>
+</html>
